@@ -8,5 +8,5 @@ fetch('https://fayaaz036.github.io/WAPS/data.json')
         return response;
     })
     .then((response) => {
-        console.log(response);
+        console.log(response.name);
     });
