@@ -1,5 +1,5 @@
 
-fetch('https://fayaaz036.github.io/data.json')
+fetch('https://fayaaz036.github.io/WAPS/data.json')
     .then((response) => {
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
