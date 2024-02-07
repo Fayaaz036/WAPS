@@ -1,6 +1,46 @@
-section.icon > .iconboven {
-    width:75px;
+.container {
+    display: flex;
+    align-content: center;
 }
+
+section.iconboven > img , section.icononder > img {
+    width:75px;
+    height:75px;
+}
+
+.iconboven , .icononder {
+    height:10em;
+}
+
 section.icon > p {
     font-size:1.5em;
 }
+
+.midden {
+    border: black 1em solid;
+}
+
+.midden > h2 {
+    font-size: 5em;
+    text-align: center;
+    border-top: black 0.1em solid;
+    border-bottom: black 0.1em solid;
+
+}
+.midden > img {
+    width:20em;
+    padding: 2em;
+
+}
+
+.midden > img:nth-of-type(2) {
+    transform: rotate(180deg);
+}
+.icononder {
+    transform: rotate(180deg);
+    position: relative;
+    top: 56em;
+    right:3em;
+    background-color: white;
+}
+
