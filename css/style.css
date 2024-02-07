@@ -2,6 +2,13 @@
     display: flex;
     align-content: center;
 }
+h2 {
+    font-family: "Racing Sans One", sans-serif;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+}
 
 section.iconboven > img , section.icononder > img {
     width:75px;
