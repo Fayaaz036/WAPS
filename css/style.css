@@ -11,6 +11,11 @@ section.iconboven > img , section.icononder > img {
 .iconboven , .icononder {
     height:10em;
 }
+.iconboven {
+    position: relative;
+    left:3em;
+    background-color: white;
+}
 
 section.icon > p {
     font-size:1.5em;
