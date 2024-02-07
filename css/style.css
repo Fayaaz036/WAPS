@@ -32,6 +32,7 @@ section.icon > p {
     text-align: center;
     border-top: black 0.1em solid;
     border-bottom: black 0.1em solid;
+    margin: 0;
 
 }
 .midden > img {
@@ -46,7 +47,7 @@ section.icon > p {
 .icononder {
     transform: rotate(180deg);
     position: relative;
-    top: 56em;
+    top: 47.5em;
     right:3em;
     background-color: white;
 }
