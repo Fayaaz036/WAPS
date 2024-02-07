@@ -9,10 +9,12 @@ section.iconboven > img , section.icononder > img {
 }
 
 .iconboven , .icononder {
-    height:10em;
+    height:8em;
 }
+
 .iconboven {
     position: relative;
+    top: 1.5em;
     left:3em;
     background-color: white;
 }
@@ -49,3 +51,8 @@ section.icon > p {
     background-color: white;
 }
 
+.kaartnummer {
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+}
