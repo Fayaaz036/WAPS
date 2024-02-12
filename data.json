@@ -1,9 +1,10 @@
 {
     "name": "Fayaaz",
-    "avatar": "URL",
+    "avatar": "https://github.com/Fayaaz036/WAPS/blob/00a97cea8d741d1f37b9f5eb5c37849556f05413/img/avataraboutme.png",
     "dateofbirth": "16-05-2001",
     "city": "Almere",
     "openForJobProposals" : true,
     "iconsmall" : "img/motorbike.png",
-    "iconmain" : "img/motorbikekleur.png"
+    "iconmain" : "img/motorbikekleur.png",
+    "pages" : ["Over Mij", "Mijn Skills", "Mijn API"]
 }

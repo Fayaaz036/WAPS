@@ -128,7 +128,7 @@ html {
 }
 
 .container article .achterkant {
-    background-color: #f00;
+    background-color: #fff;
     transform: rotateY(180deg);
     border-radius: 10px;
 }
