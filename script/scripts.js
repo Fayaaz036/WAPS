@@ -1,5 +1,5 @@
 const container = document.querySelector('.container')
-const titleCard = document.querySelector('.title')
+const titleCard = document.querySelector('.pagename')
 const firstnameElement = document.querySelector('.firstName');
 const age = document.querySelector('.ageNumber')
 const bioTextEl = document.querySelector('.bioText')
@@ -16,7 +16,7 @@ async function haalJSONop() {
     try {
         const reactie = await fetch(githubJsonUrl)
         const data = await reactie.json()
-        titleCard.textContent = data['kaart-1'].title
+        titleCard.textContent = data['kaart-1'].pages
         firstnameElement.textContent = data['kaart-1'].firstname
         age.textContent = data['kaart-1'].age
         bioTextEl.textContent = data['kaart-1'].bio[1]
