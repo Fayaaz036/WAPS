@@ -16,7 +16,11 @@ async function haalJSONop() {
     try {
         const reactie = await fetch(githubJsonUrl)
         const data = await reactie.json()
-        titleCard.textContent = data.pages[0]
+        const kaart1 = document.querySelector('article:first-of-type')
+        if(kaart1){
+            kaart1.querySelector('.voorkant .pagename').textContent = data.pages[0]
+            kaart1.querySelector('.achterkant .pagename').textContent = data.pages[0]
+        }
         // titleCard.textContent = data['kaart-2'].pages[1]
         // titleCard.textContent = data['kaart-3'].pages[2]
 
