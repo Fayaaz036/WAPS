@@ -16,17 +16,17 @@ async function haalJSONop() {
     try {
         const reactie = await fetch(githubJsonUrl)
         const data = await reactie.json()
-        titleCard.textContent = data['kaart-1'].pages[0]
-        firstnameElement.textContent = data['kaart-1'].firstname
-        age.textContent = data['kaart-1'].age
-        bioTextEl.textContent = data['kaart-1'].bio[1]
-        const avatarImgs = document.querySelectorAll('.avatarIcon')
-        avatarImgs.forEach((img, index) => {
-            img.id = index
-            img.src = data['kaart-1'].avatar
-            img.alt = "Pharaoh Avatar"
-        })
-        console.log(data)
+        titleCard.textContent = data.pages[0]
+        // firstnameElement.textContent = data['kaart-1'].firstname
+        // age.textContent = data['kaart-1'].age
+        // bioTextEl.textContent = data['kaart-1'].bio[1]
+        // const avatarImgs = document.querySelectorAll('.avatarIcon')
+        // avatarImgs.forEach((img, index) => {
+        //     img.id = index
+        //     img.src = data['kaart-1'].avatar
+        //     img.alt = "Pharaoh Avatar"
+        // })
+        console.log(titleCard)
     } catch (error) {
         console.error('Er is een fout opgetreden bij het ophalen en verwerken van de JSON:', error)
     }
