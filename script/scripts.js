@@ -3,7 +3,7 @@ const titleCard = document.querySelector('.title')
 const firstnameElement = document.querySelector('.firstName');
 const age = document.querySelector('.ageNumber')
 const bioTextEl = document.querySelector('.bioText')
-const githubJsonUrl = 'https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/scripts/about.json'
+const githubJsonUrl = 'https://raw.githubusercontent.com/Fayaaz036/WAPS/master/data.json'
 let isKaartFlipped = false
 
 function main() {
