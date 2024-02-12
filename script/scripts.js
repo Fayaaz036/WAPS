@@ -16,7 +16,7 @@ async function haalJSONop() {
     try {
         const reactie = await fetch(githubJsonUrl)
         const data = await reactie.json()
-        titleCard.textContent = data['kaart-1'].pages
+        titleCard.textContent = data['kaart-1'].pages[0]
         firstnameElement.textContent = data['kaart-1'].firstname
         age.textContent = data['kaart-1'].age
         bioTextEl.textContent = data['kaart-1'].bio[1]
