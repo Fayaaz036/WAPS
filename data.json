@@ -6,5 +6,5 @@
     "openForJobProposals" : true,
     "iconsmall" : "img/motorbike.png",
     "iconmain" : "img/motorbikekleur.png",
-    "pages" : ["Over Mij hOi", "Mijn Skills", "Mijn API"]
+    "pages" : ["Over Mij", "Mijn Skills", "Mijn API"]
 }
