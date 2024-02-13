@@ -6,27 +6,22 @@ const kaart2 = document.querySelector('article:nth-child(2)')
 const kaart3 = document.querySelector('article:nth-child(3)')
 
 async function haalKaart1op() {
-    const reactie = await fetch(githubJsonUrl)
-    const data = await reactie.json()
-    const avatarImgs = document.querySelectorAll('.avatar')
-    // kaart1.querySelector('.voorkant .kaartnummer').textContent = data.kaartnummer
-    kaart1.querySelector('.voorkant .pagename').textContent = data.pages[0]
-    kaart1.querySelector('.achterkant .pagename').textContent = data.pages[0]
-    // kaart1.getElementById('avatarAbout').imageURL = data.avatars[0]
-    kaart1.querySelector('.bio').textContent = data.bio[0]
-    avatarImgs.forEach((img, index) => {
-        img.id = index
-        img.src = data.avatars['0']
-        img.alt = "Pharaoh Avatar"
-    })
-    // console.log(kaart1.data.avatars)
+    const reactie = await fetch(githubJsonUrl);
+    const data = await reactie.json();
+    kaart1.querySelector('.achterkant .midden .avatar').src = data.avatars[0];
+    kaart1.querySelector('.voorkant .pagename').textContent = data.pages[0];
+    kaart1.querySelector('.achterkant .pagename').textContent = data.pages[0];
+    kaart1.querySelector('.bio').textContent = data.bio[0];
+
+    console.log(data.avatars[0])
     }
 
     haalKaart1op()
 async function haalKaart2op() {
     const reactie = await fetch(githubJsonUrl)
     const data = await reactie.json()
-        kaart2.querySelector('.achterkant .pagename').textContent = data.pages[1]
+    kaart2.querySelector('.midden .avatar').src = data.avatars[1];
+    kaart2.querySelector('.achterkant .pagename').textContent = data.pages[1]
         kaart2.querySelector('.achterkant .bio').textContent = data.bio[1]
         kaart2.querySelector('.voorkant .pagename').textContent = data.pages[1]
         // kaart2.querySelector('.voorkant .kaartnummer').textContent = data.kaartnummer
