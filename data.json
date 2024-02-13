@@ -1,7 +1,7 @@
 {
     "firstName": "Fayaaz",
     "lastName": "Nabie",
-  "avatar_url": "https://github.com/Fayaaz036/WAPS/blob/00a97cea8d741d1f37b9f5eb5c37849556f05413/img/avataraboutme.png",
+  "avatar_url": "https://raw.githubusercontent.com/Fayaaz036/WAPS/00a97cea8d741d1f37b9f5eb5c37849556f05413/img/avataraboutme.png",
     "dateofbirth": "16-05-2001",
     "city": "Almere",
     "age" : "22",
@@ -14,8 +14,8 @@
             "Voor de API opdracht heb ik gekozen om alle data uit een JSON FIle te halen. Hier zie je wat ik heb gedaan."
     ],
     "kaartnummer" : "16",
-    "avatars" : ["https://github.com/Fayaaz036/WAPS/blob/43ff41b10fab8ae3abe84b97153b840d5eb576ae/img/avataraboutme.png",
-                "https://github.com/Fayaaz036/WAPS/blob/43ff41b10fab8ae3abe84b97153b840d5eb576ae/img/avatarskills.png",
-                "https://github.com/Fayaaz036/WAPS/blob/43ff41b10fab8ae3abe84b97153b840d5eb576ae/img/avatarmusic.png"
+    "avatars" : ["https://raw.githubusercontent.com/Fayaaz036/WAPS/43ff41b10fab8ae3abe84b97153b840d5eb576ae/img/avataraboutme.png",
+                "https://raw.githubusercontent.com/Fayaaz036/WAPS/43ff41b10fab8ae3abe84b97153b840d5eb576ae/img/avatarskills.png",
+                "https://raw.githubusercontent.com/Fayaaz036/WAPS/43ff41b10fab8ae3abe84b97153b840d5eb576ae/img/avatarmusic.png"
     ]
 }
