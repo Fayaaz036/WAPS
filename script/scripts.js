@@ -8,7 +8,7 @@ const kaart3 = document.querySelector('article:nth-child(3)')
 async function haalKaart1op() {
     const reactie = await fetch(githubJsonUrl);
     const data = await reactie.json();
-    kaart1.querySelector('.achterkant .midden .avatar').src = data.avatars[0];
+    kaart1.querySelector('.achterkant img.avatar').src = data.avatars[0];
     kaart1.querySelector('.voorkant .pagename').textContent = data.pages[0];
     kaart1.querySelector('.achterkant .pagename').textContent = data.pages[0];
     kaart1.querySelector('.bio').textContent = data.bio[0];

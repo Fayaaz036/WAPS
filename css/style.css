@@ -15,6 +15,10 @@ p {
     font-family: "Poppins", sans-serif;
 }
 
+.avatar {
+    height:100px;
+    width: 100px;
+}
 .iconboven > img , .icononder > img {
     margin-left: 0.5em;
     width:35px;
