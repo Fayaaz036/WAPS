@@ -17,6 +17,8 @@ p {
 
 .avatar {
     height:420px;
+    width:420px;
+
 }
 .iconboven > img , .icononder > img {
     margin-left: 0.5em;
