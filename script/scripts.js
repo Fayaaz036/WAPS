@@ -30,7 +30,7 @@ haalKaart2op()
 
 async function haalKaart3op() {
     const reactie = await fetch(githubJsonUrl)
-    const data = await reactie.json()
+    const data = await reactie.json();
     kaart2.querySelector('.midden .avatar').src = data.avatars[2];
     kaart3.querySelector('.achterkant .pagename').textContent = data.pages[2]
     kaart3.querySelector('.bio').textContent = data.bio[2]
