@@ -13,13 +13,9 @@ async function haalKaart1op() {
     kaart1.querySelector('.achterkant .pagename').textContent = data.pages[0];
     kaart1.querySelector('.bio').textContent = data.bio[0];
     kaart1.querySelector('.iconboven h2 , .icononder h2 , .achterkant .h2 ').textContent = data.kaartnummer;
-    console.log(data.kaartnummer);
-
-
-    console.log(data.avatars[0])
     }
 
-    haalKaart1op()
+    haalKaart1op();
 async function haalKaart2op() {
     const reactie = await fetch(githubJsonUrl)
     const data = await reactie.json()
