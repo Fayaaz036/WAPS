@@ -37,7 +37,7 @@ Nu ik weet welke data ik allemaal nodig heb kan in een lijstje maken met data di
                 "https://raw.githubusercontent.com/Fayaaz036/WAPS/43ff41b10fab8ae3abe84b97153b840d5eb576ae/img/avatarskills.png",
                 "https://raw.githubusercontent.com/Fayaaz036/WAPS/43ff41b10fab8ae3abe84b97153b840d5eb576ae/img/avatarmusic.png"
     ],
-  "turnAroundText" : "Draai je telefoon om verder te gaan :)",
+  "turnAroundText" : "Draai je telefoon om verder te gaan :)"
 }
 ```
 ### Stap 3 - Kaarten in HTML maken
