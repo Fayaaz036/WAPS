@@ -12,7 +12,7 @@
         position: relative;
         margin-right: 30px;
         transition: 0.2s;
-        transform: scale(50%);
+        transform: scale(45%);
 
     }
     .article.flipped figure {
@@ -21,8 +21,9 @@
         height: 300px; /* bijgewerkte hoogte */
     }
     .container article:hover {
-        transform: scale(75%)!important;
+        transform: scale(55%)!important;
         bottom:1.5em!important;
+        top:0!important;
     }
 }
     @media only screen and (min-width:990px) {
