@@ -8,7 +8,7 @@
     "openForJobProposals" : true,
     "pages" : ["Over Mij", "My Skills", "My API"],
     "bio" : ["Ik ben Fayaaz, 22 jaar oud en afkomstig uit Almere. Momenteel ben ik bezig met de minor Web Design & Development aan de Hogeschool van Amsterdam. In mijn vrije tijd ben ik gepassioneerd bezig met motorrijden, waarbij ik de vrijheid van de open weg omarm. Daarnaast vind ik het heerlijk om te sleutelen aan mijn scooter.",
-             "Tijdens mijn studie heb ik ervaring opgedaan met HTML, CSS en JavaScript. Hoewel ik goed overweg kan met HTML en CSS, vind ik JavaScript nog wat uitdagend. Ik ben echter vastbesloten om mijn vaardigheden te verbeteren en ben gemotiveerd om meer te leren over JavaScript. Mijn doel is om mijn kennis van JavaScript te verdiepen, zodat ik nog beter als ontwikkelaar verder kan ontwikkelen.",
+             "Tijdens mijn studie heb ik ervaring opgedaan met HTML, CSS en JavaScript. Hoewel ik goed overweg kan met HTML en CSS, vind ik JavaScript nog wat uitdagend. Mijn doel is om mijn kennis van JavaScript te verdiepen, zodat ik nog beter als ontwikkelaar verder kan ontwikkelen.",
             "Voor de API opdracht heb ik gekozen om alle data uit een JSON FIle te halen. Ik heb een HTML skelet gemaakt, en die ingevuld met de data uit een JSON file. "
     ],
     "kaartnummer" : "16",
