@@ -151,3 +151,8 @@ Ik vond het begin best moeilijk om te beginnen. Ik heb te ambitieuze plannen gem
 
 Ik vond het leuk om met deze opdracht bezig te zijn. Ik heb samen met Sanne gezeten om javascript wat beter onder de knie te krijgen. Ook aan mijn groepgenoten heb ik heel veel gehad.
 Ik ben zelf nog niet zo heel erg goed met Javascript. Ik merk wel dat ik steeds vaker functies begin te onthouen en te herkennen. Ik hoop dat ik in de volgende weken meer vooruitgang kan boeken. 
+
+## bronnen 
+https://app.lottiefiles.com/share/25863dfa-f919-4150-bd64-ff41afc995d5 voor de portrait landscape logo
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp voor de mediaqueries landscape en responsive
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure voor de figures
