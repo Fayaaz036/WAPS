@@ -3,6 +3,30 @@
 .main {
     display: flex;
 }
+    
+@media only screen and (max-width:850px) {
+    .container article {
+        width: 75px!important;
+        height: 100px!important;
+        /*perspective: 1000px;*/
+        position: relative;
+        margin-right: 30px;
+        transition: 0.2s;
+
+    }
+}
+    @media only screen and (min-width:870px) {
+        .container article {
+            width: 250px;
+            height: 400px;
+            perspective: 1000px;
+            position: relative;
+            margin-right: 30px;
+            transition: 0.2s;
+
+        }
+    }
+
     figure {
         display: flex;
         align-content: center;
@@ -106,6 +130,8 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        background-color: cornflowerblue;
+
     }
 
     .container {
@@ -115,15 +141,7 @@
         /* margin-right: 6em; */
     }
 
-    .container article {
-        width: 250px;
-        height: 400px;
-        perspective: 1000px;
-        position: relative;
-        margin-right: 30px;
-        transition: 0.2s;
 
-    }
 
     .container article > figure {
         width: 100%;
@@ -144,7 +162,7 @@
     }
 
     .container article .voorkant {
-        background-color: #ccc;
+        background-color: #fff;
         border-radius: 10px;
         transform: rotateY(0deg);
     }
@@ -285,3 +303,5 @@
 
     }
 }
+
+
