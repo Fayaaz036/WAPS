@@ -267,6 +267,21 @@
         display:none;
     }
     .isPortrait {
-        display:flex;
+        display:block;
+        height: 100vh;
+        background-color: cornflowerblue;
+    }
+    iframe {
+        margin-top:25%;
+        height:50%;
+        width:100%;
+        border:cornflowerblue 2em;
+    }
+    h2 {
+        font-family: "Racing Sans One", sans-serif;
+        text-align: center;
+        font-size:50px;
+        color:white;
+
     }
 }

@@ -6,8 +6,6 @@
     "city": "Almere",
     "age" : "22",
     "openForJobProposals" : true,
-    "iconsmall" : "img/motorbike.png",
-    "iconmain" : "img/motorbikekleur.png",
     "pages" : ["Over Mij", "My Skills", "My API"],
     "bio" : ["Mijn naam is Fayaaz. Ik ben 22 jaar oud en ik kom uit Almere. Ik volg momenteel de minor Web Design & Development",
              "Ik heb de afgelopen jaren met verschillende gewerkt.Ik heb hier een overzicht met alle talen die ik heb gebruikt.",
@@ -17,5 +15,7 @@
     "avatars" : ["https://raw.githubusercontent.com/Fayaaz036/WAPS/43ff41b10fab8ae3abe84b97153b840d5eb576ae/img/avataraboutme.png",
                 "https://raw.githubusercontent.com/Fayaaz036/WAPS/43ff41b10fab8ae3abe84b97153b840d5eb576ae/img/avatarskills.png",
                 "https://raw.githubusercontent.com/Fayaaz036/WAPS/43ff41b10fab8ae3abe84b97153b840d5eb576ae/img/avatarmusic.png"
-    ]
+    ],
+  "turnAroundText" : "Draai je telefoon om verder te gaan :)",
+  "turnAroundImg" : ""
 }
