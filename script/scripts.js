@@ -80,47 +80,26 @@ document.addEventListener('click', function(event) {
         }
     }
 })
-document.querySelectorAll('.figure').forEach(item => {
-    item.addEventListener('click', event => {
-        const clickedFigure = event.target;
-        document.querySelectorAll('.figure').forEach(figure => {
-            if (figure !== clickedFigure) {
-                figure.classList.add('cardAway');
-            }
-        });
-        clickedFigure.classList.add('come-back');
-    });
-});
+// document.querySelectorAll('.figure').forEach(item => {
+//     item.addEventListener('click', event => {
+//         const clickedFigure = event.target;
+//         document.querySelectorAll('.figure').forEach(figure => {
+//             if (figure !== clickedFigure) {
+//                 figure.classList.add('cardAway');
+//             }
+//         });
+//         clickedFigure.classList.add('come-back');
+//     });
+// });
 
-document.getElementById('shuffleButton').addEventListener('click', function() {
-    const container = document.querySelector('.container');
-    const figures = Array.from(document.querySelectorAll('.figure'));
-    figures.sort(() => Math.random() - 0.5); // Willekeurige volgorde
+// document.getElementById('shuffleButton').addEventListener('click', function() {
+//     const container = document.querySelector('.container');
+//     const figures = Array.from(document.querySelectorAll('.figure'));
+//     figures.sort(() => Math.random() - 0.5); // Willekeurige volgorde
+//
+//     figures.forEach(figure => {
+//         container.appendChild(figure);
+//     });
+// });
 
-    figures.forEach(figure => {
-        container.appendChild(figure);
-    });
-});
 
-const instructionElement = document.getElementById('instruction');
-
-// Functie om de instructie-animatie te starten
-function startInstructionAnimation() {
-    // Voeg een eventlistener toe voor het apparaatoriëntatie-evenement
-    window.addEventListener('deviceorientation', handleOrientation);
-}
-
-// Functie om de apparaatoriëntatie te verwerken
-function handleOrientation(event) {
-    // Controleer de gamma-waarde voor horizontale oriëntatie
-    if (Math.abs(event.gamma) < 10) {
-        // Verberg de instructie als de telefoon horizontaal is
-        instructionElement.style.display = 'none';
-    } else {
-        // Toon de instructie als de telefoon niet horizontaal is
-        instructionElement.style.display = 'block';
-    }
-}
-
-// Start de instructie-animatie wanneer de pagina geladen is
-window.addEventListener('load', startInstructionAnimation);
