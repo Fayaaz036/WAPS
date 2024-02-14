@@ -4,18 +4,28 @@
     display: flex;
 }
     
-@media only screen and (max-width:850px) {
+@media only screen and (max-width:989px) {
     .container article {
-        width: 75px!important;
-        height: 100px!important;
+        width: 250px;
+        height: 400px;
         /*perspective: 1000px;*/
         position: relative;
         margin-right: 30px;
         transition: 0.2s;
+        transform: scale(50%);
 
     }
+    .article.flipped figure {
+        z-index: 2;
+        width: 125px; /* bijgewerkte breedte */
+        height: 300px; /* bijgewerkte hoogte */
+    }
+    .container article:hover {
+        transform: scale(75%)!important;
+        bottom:1.5em!important;
+    }
 }
-    @media only screen and (min-width:870px) {
+    @media only screen and (min-width:990px) {
         .container article {
             width: 250px;
             height: 400px;
@@ -186,14 +196,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-
-    .container article.dimmed {
-        filter: brightness(0.9);
-        transition: 0.2s;
-        color: aqua;
-
     }
 
     .container article:first-of-type {
