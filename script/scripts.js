@@ -43,24 +43,16 @@ async function haalKaart3op() {
 
 }haalKaart3op()
 
+//portrait text
+async function portrettext(){
+    const portraittext = document.querySelector('.turnAroundText');
+    const reactie = await fetch(githubJsonUrl)
+    const data = await reactie.json();
+    portraittext.innerHTML = data.turnAroundText; 
+}portrettext();
 
-// firstnameElement.textContent = data['kaart-1'].firstname
-    // age.textContent = data['kaart-1'].age
-    // bioTextEl.textContent = data['kaart-1'].bio[1]
-    // const avatarImgs = document.querySelectorAll('.avatarIcon')
-
-    //
-    //     console.log(titleCard)
-    //
-    //
-    // catch (error) {
-    //     console.error('Er is een fout opgetreden bij het ophalen en verwerken van de JSON:', error)
-    // }
-
-
-
-
-
+        
+        
 container.addEventListener('click', function(event) {
     const clickedCard = event.target.closest('article')
     const flippedCard = document.querySelector('.container article.flipped')
