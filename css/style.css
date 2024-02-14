@@ -1,246 +1,272 @@
+@media screen and (orientation:landscape) {
+/* CSS applied when the device is in landscape mode*/
 .main {
-    display:flex;
-}
-figure {
     display: flex;
-    align-content: center;
-    width:416px;
-    height:924px;
 }
-h2 {
-    font-family: "Racing Sans One", sans-serif;
-}
-
-p {
-    font-family: "Poppins", sans-serif;
-}
-
-img.avatar {
-    height:200px!important;
-
-}
-.iconboven > img , .icononder > img {
-    margin-left: 0.5em;
-    width:35px;
-}
-
-.iconboven {
-    position: absolute;
-}
-.iconboven > h2 , .iconboven > h2 {
-    margin:0;
-}
-
-.icon > h2 {
-    font-size:1.5em;
-}
-
-.midden > h2 {
-    font-size: 3em;
-    text-align: center;
-    border-top: black 0.1em solid;
-    border-bottom: black 0.1em solid;
-    margin: 0;
-
-}
-.midden > img {
-height:10em;
-}
-
-.midden > img:nth-of-type(2) {
-    transform: rotate(180deg);
-}
-.icononder {
-    transform: rotate(180deg);
-    position: absolute;
-    bottom:0.1em;
-    left:12em;
-}
-.flipped .icononder {
-    transform: rotate(180deg);
-    position: absolute;
-    bottom:0.1em;
-    left:19em;
-}
-
-.kaartnummer {
-    font-size: 1.5em;
-    text-align: center;
-    margin: 0;
-}
-
-article:nth-of-type(1){
-/*transform: rotate(-20deg)*/
-}
-article:nth-of-type(3){
-    /*transform: rotate(20deg)*/
-}
-
-.bio {
-    margin:1em;
-}
-
-
-.containerEenVoorkant.flipped > figure{
-    transform: rotate(180deg);
-}
-.containerEenVoorkant.flipped > figure:hover {
-    transform: rotatey(170deg);
-}
-body,
-html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.container {
-    display: flex;
-    margin-right: 5em;
-    justify-content: center;
-    /* margin-right: 6em; */
-}
-
-.container article {
-    width: 250px;
-    height: 400px;
-    perspective: 1000px;
-    position: relative;
-    margin-right: 30px;
-    transition: 0.2s;
-
-}
-
-.container article>figure {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
-    box-shadow: rgba(0, 0, 0, 0.165) 10px 10px 50px;
-    border-radius: 20px;
-}
-
-.container article .voorkant,
-.container article .achterkant {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-}
-
-.container article .voorkant {
-    background-color: #ccc;
-    border-radius: 10px;
-    transform: rotateY(0deg);
-}
-
-.container article .achterkant {
-    background-color: #fff;
-    transform: rotateY(180deg);
-    border-radius: 10px;
-}
-
-
-.container article.flipped>figure {
-    transform: rotateY(180deg);
-}
-
-.container article.flipped:hover>figure {
-    transform: rotateY(180deg);
-}
-
-.container article .kaart-inhoud {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.container article.dimmed {
-    filter: brightness(0.9);
-    transition: 0.2s;
-    color: aqua;
-
-}
-
-.container article:first-of-type {
-    /*transform: rotate(-30deg);*/
-    transition: 0.2s ease;
-    top: 0px;
-     /*position: absolute;*/
-    z-index: 1;
-    animation: expandCards;
-}
-
-.container article:nth-of-type(2) {
-    /*transform: rotate(-15deg);*/
-    transition: 0.2s ease;
-    top: 0px;
-
-}
-
-.container article:nth-of-type(3) {
-    /*transform: rotate(-0deg);*/
-    transition: 0.2s ease;
-    top: 0px;
-
-}
-
-.container article:first-of-type:hover {
-    top: 50px;
-    transition: 0.2s ease;
-}
-
-.container article:nth-of-type(2):hover {
-    top: 50px;
-    transition: 0.2s ease;
-}
-
-.container article:nth-of-type(3):hover {
-    top: 50px;
-    transition: 0.2s ease;
-}
-
-.container article:nth-of-type(4):hover {
-    bottom: 90px;
-    transition: 0.2s ease;
-}
-
-.container article:nth-of-type(5):hover {
-    transition: 0.2s ease;
-    /*top: 0px;*/
-}
-
-.container article.flipped {
-    z-index: 2;
-    width: 350px; /* bijgewerkte breedte */
-    height: 600px; /* bijgewerkte hoogte */
-    transform: rotate(0deg);
-}
-.figure:target {
-    animation-name: cardAway;
-    animation-duration: 5s;}
-
-@keyframes expandCards {
-    0% {
-    translateX(0em);
+    figure {
+        display: flex;
+        align-content: center;
+        width: 416px;
+        height: 924px;
     }
-    25% {
-    translateX(5em);
+
+    h2 {
+        font-family: "Racing Sans One", sans-serif;
+    }
+
+    p {
+        font-family: "Poppins", sans-serif;
+    }
+
+    img.avatar {
+        height: 200px !important;
 
     }
-    50% {
-    translateX(10em);
+
+    .iconboven > img, .icononder > img {
+        margin-left: 0.5em;
+        width: 35px;
+    }
+
+    .iconboven {
+        position: absolute;
+    }
+
+    .iconboven > h2, .iconboven > h2 {
+        margin: 0;
+    }
+
+    .icon > h2 {
+        font-size: 1.5em;
+    }
+
+    .midden > h2 {
+        font-size: 3em;
+        text-align: center;
+        border-top: black 0.1em solid;
+        border-bottom: black 0.1em solid;
+        margin: 0;
 
     }
-    75% {
-    translateX(15em);
+
+    .midden > img {
+        height: 10em;
     }
-    100% {
-    translateX(20em);
+
+    .midden > img:nth-of-type(2) {
+        transform: rotate(180deg);
+    }
+
+    .icononder {
+        transform: rotate(180deg);
+        position: absolute;
+        bottom: 0.1em;
+        left: 12em;
+    }
+
+    .flipped .icononder {
+        transform: rotate(180deg);
+        position: absolute;
+        bottom: 0.1em;
+        left: 19em;
+    }
+
+    .kaartnummer {
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0;
+    }
+
+    article:nth-of-type(1) {
+        /*transform: rotate(-20deg)*/
+    }
+
+    article:nth-of-type(3) {
+        /*transform: rotate(20deg)*/
+    }
+
+    .bio {
+        margin: 1em;
+    }
+
+
+    .containerEenVoorkant.flipped > figure {
+        transform: rotate(180deg);
+    }
+
+    .containerEenVoorkant.flipped > figure:hover {
+        transform: rotatey(170deg);
+    }
+
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        margin-right: 5em;
+        justify-content: center;
+        /* margin-right: 6em; */
+    }
+
+    .container article {
+        width: 250px;
+        height: 400px;
+        perspective: 1000px;
+        position: relative;
+        margin-right: 30px;
+        transition: 0.2s;
+
+    }
+
+    .container article > figure {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: transform 0.6s;
+        box-shadow: rgba(0, 0, 0, 0.165) 10px 10px 50px;
+        border-radius: 20px;
+    }
+
+    .container article .voorkant,
+    .container article .achterkant {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+    }
+
+    .container article .voorkant {
+        background-color: #ccc;
+        border-radius: 10px;
+        transform: rotateY(0deg);
+    }
+
+    .container article .achterkant {
+        background-color: #fff;
+        transform: rotateY(180deg);
+        border-radius: 10px;
+    }
+
+
+    .container article.flipped > figure {
+        transform: rotateY(180deg);
+    }
+
+    .container article.flipped:hover > figure {
+        transform: rotateY(180deg);
+    }
+
+    .container article .kaart-inhoud {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .container article.dimmed {
+        filter: brightness(0.9);
+        transition: 0.2s;
+        color: aqua;
+
+    }
+
+    .container article:first-of-type {
+        /*transform: rotate(-30deg);*/
+        transition: 0.2s ease;
+        top: 0px;
+        /*position: absolute;*/
+        z-index: 1;
+        animation: expandCards;
+    }
+
+    .container article:nth-of-type(2) {
+        /*transform: rotate(-15deg);*/
+        transition: 0.2s ease;
+        top: 0px;
+
+    }
+
+    .container article:nth-of-type(3) {
+        /*transform: rotate(-0deg);*/
+        transition: 0.2s ease;
+        top: 0px;
+
+    }
+
+    .container article:first-of-type:hover {
+        top: 50px;
+        transition: 0.2s ease;
+    }
+
+    .container article:nth-of-type(2):hover {
+        top: 50px;
+        transition: 0.2s ease;
+    }
+
+    .container article:nth-of-type(3):hover {
+        top: 50px;
+        transition: 0.2s ease;
+    }
+
+    .container article:nth-of-type(4):hover {
+        bottom: 90px;
+        transition: 0.2s ease;
+    }
+
+    .container article:nth-of-type(5):hover {
+        transition: 0.2s ease;
+        /*top: 0px;*/
+    }
+
+    .container article.flipped {
+        z-index: 2;
+        width: 350px; /* bijgewerkte breedte */
+        height: 600px; /* bijgewerkte hoogte */
+        transform: rotate(0deg);
+    }
+
+    .figure:target {
+        animation-name: cardAway;
+        animation-duration: 5s;
+    }
+
+    @keyframes expandCards {
+        0% {
+        translateX(0 em);
+        }
+        25% {
+        translateX(5 em);
+
+        }
+        50% {
+        translateX(10 em);
+
+        }
+        75% {
+        translateX(15 em);
+        }
+        100% {
+        translateX(20 em);
+        }
+    }
+    .isPortrait {
+        display:none;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .container {
+        display:none;
+    }
+    .isPortrait {
+        display:flex;
     }
 }
