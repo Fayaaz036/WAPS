@@ -8,7 +8,7 @@
     "openForJobProposals" : true,
     "iconsmall" : "img/motorbike.png",
     "iconmain" : "img/motorbikekleur.png",
-    "pages" : ["Over Mij", "Mijn Skills", "Mijn API"],
+    "pages" : ["Over Mij", "My Skills", "My API"],
     "bio" : ["Mijn naam is Fayaaz. Ik ben 22 jaar oud en ik kom uit Almere. Ik volg momenteel de minor Web Design & Development",
              "Ik heb de afgelopen jaren met verschillende gewerkt.Ik heb hier een overzicht met alle talen die ik heb gebruikt.",
             "Voor de API opdracht heb ik gekozen om alle data uit een JSON FIle te halen. Hier zie je wat ik heb gedaan."

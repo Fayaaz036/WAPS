@@ -120,8 +120,8 @@ function startInstructionAnimation() {
 
 // Functie om de apparaatoriëntatie te verwerken
 function handleOrientation(event) {
-    // Controleer of de telefoon horizontaal wordt gehouden
-    if (Math.abs(event.gamma) < 10 && Math.abs(event.beta) < 10) {
+    // Controleer de gamma-waarde voor horizontale oriëntatie
+    if (Math.abs(event.gamma) < 10) {
         // Verberg de instructie als de telefoon horizontaal is
         instructionElement.style.display = 'none';
     } else {
