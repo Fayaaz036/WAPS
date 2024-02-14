@@ -15,9 +15,8 @@ p {
     font-family: "Poppins", sans-serif;
 }
 
-.avatar {
-    height:420px!important;
-    width:420px!important;
+img.avatar {
+    height:200px!important;
 
 }
 .iconboven > img , .icononder > img {
@@ -57,8 +56,14 @@ height:10em;
     bottom:0.1em;
     left:12em;
 }
+.flipped .icononder {
+    transform: rotate(180deg);
+    position: absolute;
+    bottom:0.1em;
+    left:19em;
+}
 
-#kaartnummer {
+.kaartnummer {
     font-size: 1.5em;
     text-align: center;
     margin: 0;
@@ -104,8 +109,9 @@ html {
     height: 400px;
     perspective: 1000px;
     position: relative;
-    margin-right: -30px;
+    margin-right: 30px;
     transition: 0.2s;
+
 }
 
 .container article>figure {
@@ -144,7 +150,7 @@ html {
 }
 
 .container article.flipped:hover>figure {
-    transform: rotateY(170deg);
+    transform: rotateY(180deg);
 }
 
 .container article .kaart-inhoud {
@@ -157,41 +163,31 @@ html {
 .container article.dimmed {
     filter: brightness(0.9);
     transition: 0.2s;
+    color: aqua;
+
 }
 
 .container article:first-of-type {
-    transform: rotate(-30deg);
+    /*transform: rotate(-30deg);*/
     transition: 0.2s ease;
-    top: 100px;
-    /* position: absolute;
-    z-index: 1; */
+    top: 0px;
+     /*position: absolute;*/
+    z-index: 1;
+    animation: expandCards;
 }
 
 .container article:nth-of-type(2) {
-    transform: rotate(-15deg);
+    /*transform: rotate(-15deg);*/
     transition: 0.2s ease;
-    bottom: 0px;
+    top: 0px;
 
 }
 
 .container article:nth-of-type(3) {
-    transform: rotate(-0deg);
+    /*transform: rotate(-0deg);*/
     transition: 0.2s ease;
-    bottom: 40px;
+    top: 0px;
 
-}
-
-.container article:nth-of-type(4) {
-    transform: rotate(15deg);
-    transition: 0.2s ease;
-    bottom: 30px;
-
-}
-
-.container article:nth-of-type(5) {
-    transform: rotate(30deg);
-    transition: 0.2s ease;
-    top: 50px;
 }
 
 .container article:first-of-type:hover {
@@ -200,12 +196,12 @@ html {
 }
 
 .container article:nth-of-type(2):hover {
-    bottom: 50px;
+    top: 50px;
     transition: 0.2s ease;
 }
 
 .container article:nth-of-type(3):hover {
-    bottom: 80px;
+    top: 50px;
     transition: 0.2s ease;
 }
 
@@ -216,7 +212,7 @@ html {
 
 .container article:nth-of-type(5):hover {
     transition: 0.2s ease;
-    top: 0px;
+    /*top: 0px;*/
 }
 
 .container article.flipped {
@@ -224,4 +220,27 @@ html {
     width: 350px; /* bijgewerkte breedte */
     height: 600px; /* bijgewerkte hoogte */
     transform: rotate(0deg);
+}
+.figure:target {
+    animation-name: cardAway;
+    animation-duration: 5s;}
+
+@keyframes expandCards {
+    0% {
+    translateX(0em);
+    }
+    25% {
+    translateX(5em);
+
+    }
+    50% {
+    translateX(10em);
+
+    }
+    75% {
+    translateX(15em);
+    }
+    100% {
+    translateX(20em);
+    }
 }
