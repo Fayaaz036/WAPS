@@ -91,14 +91,28 @@ Ik heb gekozen om de kaarten als lege html elementen in de index in te laten. Da
 ## stap 4 - Javascript schrijven
 De javascript file bevat verschillende functies. Zoals de class switchen naar .Flipped en andersom met de empty state.
 ```js
+container.addEventListener('click', function(event) {
+    const clickedCard = event.target.closest('article')
+    const flippedCard = document.querySelector('.container article.flipped')
 
+    if (flippedCard && clickedCard !== flippedCard) {
+        flippedCard.classList.remove('flipped')
+        isKaartFlipped = false
+    }
+
+    if (clickedCard && !clickedCard.classList.contains('flipped')) {
+        clickedCard.classList.toggle('flipped')
+        isKaartFlipped = true
+    }
+})
 ```
 ### Data ophalen van de JSON
-**codeblock
+```js
+const githubJsonUrl = 'https://raw.githubusercontent.com/Fayaaz036/WAPS/master/data.json'
+```
 ### Data invullen van de JSON in de cards
 Door mijn github Url te fetchen waar de JSON file in staat kan ik de data veilig in de cloud laten bewaren.
 ```js
-const githubJsonUrl = 'https://raw.githubusercontent.com/Fayaaz036/WAPS/master/data.json'
 
 async function haalKaart1op() {
 const reactie = await fetch(githubJsonUrl);
