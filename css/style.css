@@ -12,18 +12,27 @@
         position: relative;
         margin-right: 30px;
         transition: 0.2s;
-        transform: scale(45%);
+        /*transform: scale(65%);*/
 
+    }
+    .title {
+        text-align: center;
+        font-family: "Racing Sans One", sans-serif;
+        font-size:50px;
+        color:white;
     }
     .article.flipped figure {
         z-index: 2;
         width: 125px; /* bijgewerkte breedte */
         height: 300px; /* bijgewerkte hoogte */
     }
+    .container article.flipped {
+        /*transform: scale(70%)!important;*/
+        top:-10em!important;
+    }
     .container article:hover {
-        transform: scale(55%)!important;
-        bottom:1.5em!important;
-        top:0!important;
+        /*transform: scale(70%)!important;*/
+        top:-10em!important;
     }
 }
     @media only screen and (min-width:990px) {
@@ -137,7 +146,7 @@
     html {
         height: 100%;
         margin: 0;
-        display: flex;
+        /*display: flex;*/
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -149,7 +158,9 @@
         display: flex;
         margin-right: 5em;
         justify-content: center;
-        /* margin-right: 6em; */
+        margin-top: -6em;
+        transform: scale(50%);
+
     }
 
 
@@ -281,6 +292,13 @@
     .isPortrait {
         display:none;
     }
+    .title {
+        margin-top:1em;
+        text-align: center;
+        font-family: "Racing Sans One", sans-serif;
+        font-size:50px;
+        color:white;
+    }
 }
 
 @media screen and (orientation:portrait) {
@@ -305,6 +323,7 @@
         color:white;
 
     }
+
 }
 
 
