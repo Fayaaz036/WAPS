@@ -157,8 +157,8 @@
         display: flex;
         margin-right: 5em;
         justify-content: center;
-        margin-top: -6em;
-        transform: scale(50%);
+        /*margin-top: -6em;*/
+        /*transform: scale(50%);*/
 
     }
 
