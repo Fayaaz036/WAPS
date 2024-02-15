@@ -145,14 +145,6 @@
     }
 
 
-    .containerEenVoorkant.flipped > figure {
-        transform: rotate(180deg);
-    }
-
-    .containerEenVoorkant.flipped > figure:hover {
-        transform: rotatey(170deg);
-    }
-
     body,
     html {
         height: 100%;
