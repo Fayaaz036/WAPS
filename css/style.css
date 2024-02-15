@@ -33,7 +33,19 @@
         /*transform: scale(70%)!important;*/
         top:-10em!important;
     }
+    .container {
+        display: flex;
+        margin-right: 5em;
+        justify-content: center;
+        margin-top: -6em;
+        transform: scale(50%);
+
+    }
 }
+
+
+
+
     @media only screen and (min-width:990px) {
         .container article {
             width: 250px;
