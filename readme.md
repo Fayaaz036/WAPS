@@ -159,8 +159,9 @@ Hier haal ik op de Portret modus de display weg van de container zodat die niet 
     }
 }
 ```
-
 ## Reflectie
+![desktop.png](readmeimg%2Fdesktop.png)
+
 Ik vond het begin best moeilijk om te beginnen. Ik heb te ambitieuze plannen gemaakt, en ben er achter gekomen dat niet alles is gelukt helaas. ik heb het op een makkelijkere manier opgelost, maar had het zeker uit kunnen zoeken als ik wat meer tijd over had om te kunnen verbeteren.
 
 Ik vond het leuk om met deze opdracht bezig te zijn. Ik heb samen met Sanne gezeten om javascript wat beter onder de knie te krijgen. Ook aan mijn groepgenoten heb ik heel veel gehad.
